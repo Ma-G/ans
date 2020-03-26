@@ -25,3 +25,5 @@ usermod -a -G vboxusers $USER
 
 newgrp vboxusers
 
+### reboot
+### run sudo vboxconfig
