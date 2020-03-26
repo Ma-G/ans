@@ -1,4 +1,4 @@
-#!/bin/bash -xe
+#!/bin/bash -x
 #install vagrant and initialize ubuntu with vagrant and virtualbox
 
 DIRECTORY=./vagrant/ubuntu
