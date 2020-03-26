@@ -20,7 +20,7 @@ EOF
 sudo dnf search -y virtualbox
 
 
-sudo dnf install VirtualBox-6.1
+sudo dnf install VirtualBox-6.0 #newer won't work with vagrant
 usermod -a -G vboxusers $USER
 
 newgrp vboxusers
