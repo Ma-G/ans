@@ -1,15 +1,16 @@
 #!/bin/bash -x
 #install vagrant and initialize ubuntu with vagrant and virtualbox
 
-DIRECTORY=./vagrant/ubuntu
-if [ -d "$DIRECTORY" ]; then
-	mkdir -p vagrant/ubuntu
+DIRECTORY=./vagrant/centos/
+if [ ! -d "$DIRECTORY" ]; then
+	mkdir -p $DIRECTORY
 fi
 
-cd vagrant/ubuntu
+cp Vagrantfile $DIRECTORY
+cd $DIRECTORY
+
 
 sudo dnf install vagrant 
 
-vagrant init ubuntu/trusty64
 
 vagrant up --provider virtualbox
