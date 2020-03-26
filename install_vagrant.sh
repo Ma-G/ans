@@ -7,6 +7,9 @@ if [ ! -d "$DIRECTORY" ]; then
 fi
 
 cp Vagrantfile $DIRECTORY
+
+# copy playbook for ansible (used as a provider)
+cp playbook.yml $DIRECTORY
 cd $DIRECTORY
 
 
